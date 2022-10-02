@@ -1,8 +1,6 @@
 
 package at.ac.fhcampuswien;
 
-import com.sun.tools.jdeprscan.scan.Scan;
-
 import java.util.Scanner;
 public class App {
     Scanner scanner = new Scanner(System.in);
@@ -32,6 +30,27 @@ public class App {
 
     //todo Task 3
     public void sumOfLiterals(){
+        /*
+        ’Z’ --> char
+        0xface --> Hexa Decimal (Integral Literals)
+        012 --> Octal Integer (Integral Literals)
+        80L--> long
+        44e-1f --> Decimal in Exponent form ( Floating Point Literals)
+        5.5f, --> Floating (Floating Point Literals)
+        8.88e1
+        99.9 --> double
+        */
+        char z = 'Z';
+        int h = 0xface;
+        int o = 012;
+        long l = 80L;
+        float e = 44e-1f;
+        float f = 5.5f;
+        double q = 8.88e1;
+        double d = 99.9;
+        int sum = z + h + o + (int) l + (int) e +  (int) f + (int) q + (int) d;
+        System.out.println(sum);
+
         // input your solution here
     }
 
@@ -137,8 +156,23 @@ public class App {
     }
 
     //todo Task 10
-    public void transposedNumbers(){
+    public void transposedNumbers() {
         // input your solution here
+        System.out.print("Number: ");
+        int n = scanner.nextInt();
+        int m ;// m = Remainder
+        int reverse = 0;
+
+        if ( n < 1000) {
+            while( n != 0){
+             m = n % 10;
+             reverse = reverse * 10 + m;
+             n = n/10;
+            }
+            System.out.println(reverse);
+         } else {
+        System.out.println("The Number Can only be up to 3 Digits");
+         }
     }
 
 
@@ -151,10 +185,10 @@ public class App {
         System.out.println("\nTask 2: Hello Robot");
         exercise1.helloRobot();
 
-       /* System.out.println("\nTask 3: Literals");
+        System.out.println("\nTask 3: Literals");
         exercise1.sumOfLiterals();
 
-        System.out.println("\nTask 4: Add two Numbers");
+       /* System.out.println("\nTask 4: Add two Numbers");
         exercise1.addTwoNumbers();
 
         System.out.println("\nTask 5: Swap two Numbers without using a helper variable");
@@ -167,12 +201,12 @@ public class App {
         exercise1.ratingSalesPerson();
 
         System.out.println("\nTask 8: Commission Rate");
-        exercise1.getCommissionRate();*/
+        exercise1.getCommissionRate();
 
         System.out.println("\nTask 9: Leapyear");
         exercise1.leapyear();
 
-       /* System.out.println("\nTask 10: Transposed Numbers");
+        System.out.println("\nTask 10: Transposed Numbers");
         exercise1.transposedNumbers();*/
     }
 }
