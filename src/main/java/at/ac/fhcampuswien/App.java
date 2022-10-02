@@ -125,8 +125,15 @@ public class App {
     }
 
     //todo Task 9
-    public void leapyear(){
+    public void leapyear() {
         // input your solution here
+        System.out.print("Year: ");
+        int y = scanner.nextInt();
+        if (y % 4 == 0 && y % 100 != 0 || y % 400 == 0) {
+            System.out.print("Leapyear");
+        } else {
+            System.out.print("Not a Leapyear");
+        }
     }
 
     //todo Task 10
@@ -157,15 +164,15 @@ public class App {
         exercise1.compareTwoNumbers();
 
         System.out.println("\nTask 7: Rating Sales Person");
-        exercise1.ratingSalesPerson();*/
+        exercise1.ratingSalesPerson();
 
         System.out.println("\nTask 8: Commission Rate");
-        exercise1.getCommissionRate();
+        exercise1.getCommissionRate();*/
 
-        /*System.out.println("\nTask 9: Leapyear");
+        System.out.println("\nTask 9: Leapyear");
         exercise1.leapyear();
 
-        System.out.println("\nTask 10: Transposed Numbers");
+       /* System.out.println("\nTask 10: Transposed Numbers");
         exercise1.transposedNumbers();*/
     }
 }
