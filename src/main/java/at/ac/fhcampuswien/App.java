@@ -103,6 +103,25 @@ public class App {
     //todo Task 8
     public void getCommissionRate(){
         // input your solution here
+        System.out.print("Enter CommissionClass: ");
+        int e = scanner.nextInt();
+        //https://www.w3schools.com/java/java_switch.asp
+        switch(e) {
+            case 1:
+                System.out.println("Your Commission Rate was set to 0.01");
+                break;
+            case 2:
+                System.out.println("Your Commission Rate was set to 0.02");
+                break;
+            case 3:
+                System.out.println("Your Commission Rate was set to 0.03");
+                break;
+            case 4:
+                System.out.println("Your Commission Rate was set to 0.04");
+                break;
+            default:
+                System.out.println("Your Commission Rate was set to 0.00");
+        }
     }
 
     //todo Task 9
@@ -135,15 +154,15 @@ public class App {
         exercise1.swapTwoNumbers();
 
         System.out.println("\nTask 6: Compare two Numbers");
-        exercise1.compareTwoNumbers();*/
+        exercise1.compareTwoNumbers();
 
         System.out.println("\nTask 7: Rating Sales Person");
-        exercise1.ratingSalesPerson();
+        exercise1.ratingSalesPerson();*/
 
-       /* System.out.println("\nTask 8: Commission Rate");
+        System.out.println("\nTask 8: Commission Rate");
         exercise1.getCommissionRate();
 
-        System.out.println("\nTask 9: Leapyear");
+        /*System.out.println("\nTask 9: Leapyear");
         exercise1.leapyear();
 
         System.out.println("\nTask 10: Transposed Numbers");
