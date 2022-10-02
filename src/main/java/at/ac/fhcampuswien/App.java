@@ -185,7 +185,7 @@ public class App {
         System.out.println("\nTask 2: Hello Robot");
         exercise1.helloRobot();
 
-       /* System.out.println("\nTask 3: Literals");
+        System.out.println("\nTask 3: Literals");
         exercise1.sumOfLiterals();
 
         System.out.println("\nTask 4: Add two Numbers");
@@ -201,12 +201,12 @@ public class App {
         exercise1.ratingSalesPerson();
 
         System.out.println("\nTask 8: Commission Rate");
-        exercise1.getCommissionRate();*/
+        exercise1.getCommissionRate();
 
         System.out.println("\nTask 9: Leapyear");
         exercise1.leapyear();
 
-       /* System.out.println("\nTask 10: Transposed Numbers");
-        exercise1.transposedNumbers();*/
+       System.out.println("\nTask 10: Transposed Numbers");
+        exercise1.transposedNumbers();
     }
 }
